@@ -11,10 +11,16 @@ namespace In_out
             int largo=8, 
             int pp=1000, 
             int ruedas=4, 
-            string motor="15 cilindros") : base(ancho, largo, pp, ruedas, motor) {
+            string motor="V6") : base(ancho, largo, pp, ruedas, motor) {
             this.KgCarga = kgcarga;
             this.PlazasExtra = plazasextra;
         }
+
+        public int GetKgCarga() {return this.KgCarga;}
+        public void SetKgCarga(int kgcarga) {this.KgCarga = kgcarga;}
+
+        public int GetPlazasExtra() {return this.PlazasExtra;}
+        public void SetPlazasExtra(int plazasextra) {this.PlazasExtra = plazasextra;}
 
         public void SayHi() {
             Console.WriteLine($"Hola, tengo {this.GetAncho} de ancho");

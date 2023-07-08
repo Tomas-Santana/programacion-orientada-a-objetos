@@ -13,7 +13,7 @@ namespace In_out
             int largo=8, 
             int pp=1000, 
             int ruedas=4, 
-            string motor="15 cilindros"
+            string motor="V6"
             ) 
         {
             this.Ancho = ancho;
